@@ -25,13 +25,13 @@
         </tr>
         </thead>
         <tbody>
-        <tr th:each="estudiante : ${listaEstudiantes}">
-            <td th:text="${estudiante.nombre}"></td>
-            <td th:text="${estudiante.apellido}"></td>
-            <td th:text="${estudiante.codigoPucp}"> </td>
-            <td th:text="${estudiante.dni}"></td>
-            <td th:text="${estudiante.direccion}"></td>
-            <td th:text="${estudiante.direccion}"></td>
+        <tr th:each="auto : ${listaAutos}">
+            <td th:text="${auto.id}"></td>
+            <td th:text="${auto.modelo}"></td>
+            <td th:text="${auto.color}"> </td>
+            <td th:text="${auto.kilometraje}"></td>
+            <td th:text="${auto.sede}"></td>
+            <td th:text="${auto.costo}"></td>
             <td> <a th:href="@{/}" class="btn btn-primary">Editar</a></td>
             <td> <a th:href="@{/}" class="btn btn-primary">Borrar</a></td>
         </tr>

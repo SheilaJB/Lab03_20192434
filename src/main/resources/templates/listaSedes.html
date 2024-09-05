@@ -25,9 +25,9 @@
         </tr>
         </thead>
         <tbody>
-        <tr th:each="estudiante : ${listaEstudiantes}">
-            <td th:text="${estudiante.nombre}">Nombre</td>
-            <td th:text="${estudiante.apellido}">Apellido</td>
+        <tr th:each="sede : ${listaSedes}">
+            <td th:text="${sede.nombre}">Nombre</td>
+            <td th:text="${sede.apellido}">Apellido</td>
             <td th:text="${estudiante.codigoPucp}">Código PUCP</td>
             <td th:text="${estudiante.dni}">DNI</td>
             <td th:text="${estudiante.direccion}">Dirección</td>

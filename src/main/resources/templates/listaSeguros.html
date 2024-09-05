@@ -21,10 +21,10 @@
             </tr>
             </thead>
             <tbody>
-            <tr th:each="estudiante : ${listaEstudiantes}">
-                <td th:text="${estudiante.nombre}"></td>
-                <td th:text="${estudiante.apellido}"></td>
-                <td th:text="${estudiante.codigoPucp}"> </td>
+            <tr th:each="seguro : ${listaAutos}">
+                <td th:text="${seguro.id}"></td>
+                <td th:text="${seguro.distrito}"></td>
+                <td th:text="${seguro.dirrecion}"> </td>
                 <td> <a th:href="@{/}" class="btn btn-primary">Editar</a></td>
                 <td> <a th:href="@{/}" class="btn btn-primary">Borrar</a></td>
             </tr>
