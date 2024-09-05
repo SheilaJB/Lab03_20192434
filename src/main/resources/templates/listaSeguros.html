@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Seguros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>Lista de Sedes</h2>
+
+        <a th:href="@{/formularioSedes.html}" class="btn btn-primary">Agregar Elemento</a>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Distrito</th>
+                <th>Dirección</th>
+                <th></th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="estudiante : ${listaEstudiantes}">
+                <td th:text="${estudiante.nombre}"></td>
+                <td th:text="${estudiante.apellido}"></td>
+                <td th:text="${estudiante.codigoPucp}"> </td>
+                <td> <a th:href="@{/}" class="btn btn-primary">Editar</a></td>
+                <td> <a th:href="@{/}" class="btn btn-primary">Borrar</a></td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+</body>
+</html>
